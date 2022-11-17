@@ -8,7 +8,7 @@
   let basics, holos, galaxies, radiant, basicGallery, vee, veeUltra, veeAlt;
   let veeMax, veeMaxAlt, veeStar, trainerHolo, rainbow, gold, veeGallery;
 
-  let cube_gold = 1001;
+  let cube_gold = 1000;
   let nft_to_burn = 0;
 
   let gold_amount = "";
@@ -84,10 +84,10 @@
       </p>
       <br />
       <button class="btn" on:click={() => sdk.approve()}>
-        Approve rGLD before mint NFT</button
+        Approve rGLD before minting</button
       >
       <div class="gold-reserves">
-        <mark>Your gold reserves: {gold_amount}</mark>
+        <mark>Your rGLD balance: {gold_amount}</mark>
       </div>
     </section>
 
@@ -114,7 +114,7 @@
           >
         </div>
         <div class="mint-cube-help">
-          <mark>Select Cube weight in oz ( >= 1000 )</mark>
+          <mark>Select Cube weight in oz ( ≥ 1000 )</mark>
         </div>
       </div>
     </div>
@@ -174,7 +174,7 @@
   <p><em>Click a card to take a closer look at it!</em></p>
   <hr />
   <section>
-    <h1>Burn your NFT</h1>
+    <h1>Burn your NFT to retrieve rGLD</h1>
     <div class="burn-btn">
       <button class="mint-button" on:click={() => sdk.burnNFT(nft_to_burn)}
         >Burn NFT</button
